@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,Image, TouchableOpacity, Linking } from 'react-native'
+import { StyleSheet, Text, View,Image, TouchableOpacity, Linking, ScrollView } from 'react-native'
 import React from 'react'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -6,6 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 export default function Profile() {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.Image}>
         <Image
@@ -55,6 +56,7 @@ export default function Profile() {
         </TouchableOpacity>
       </View>
     </View>
+    </ScrollView>
   )
 }
 
